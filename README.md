@@ -16,4 +16,4 @@ Centralizar e facilitar o acesso a informações de emergência, serviços públ
 
 ## 🚀 Como acessar a aplicação
 Acesse o portal diretamente pelo link:
-👉 **[]**
+👉 **https://trizcodes.github.io/guia-solid/**
