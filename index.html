@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solidariedade e Apoio - Manaus/AM</title>
+    <style>
+        :root {
+            --primary: #d32f2f; /* Vermelho para emergências */
+            --secondary: #1976d2; /* Azul para serviços */
+            --success: #2e7d32; /* Verde para ações */
+            --bg: #f8f9fa;
+            --text: #212121;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 15px 80px;
+        }
+
+        .setor-title {
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: #666;
+            margin: 30px 0 15px;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .setor-title::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: #ddd;
+            margin-left: 10px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 18px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 6px solid var(--secondary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+
+        .card:active {
+            transform: scale(0.98);
+        }
+
+        .card-info b {
+            display: block;
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 4px;
+        }
+
+        .card-info span {
+            font-size: 0.85rem;
+            color: #757575;
+        }
+
+        .btn-acao {
+            background: var(--success);
+            color: white;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-align: center;
+            min-width: 80px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .emergencia {
+            border-left-color: var(--primary);
+        }
+
+        footer {
+            background: #fff;
+            border-top: 1px solid #eee;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        .meta-info {
+            display: block;
+            margin-top: 5px;
+            color: #aaa;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Guia Solidário: Flores</h1>
+    <p>Informação e Apoio Comunitário - Manaus / AM</p>
+</header>
+
+<div class="container">
+    
+    <div class="setor-title">🚨 Saúde e Emergência</div>
+    
+    <div class="card emergencia">
+        <div class="card-info">
+            <b>SAMU</b>
+            <span>Urgência Médica 24h</span>
+        </div>
+        <a href="tel:192" class="btn-acao">LIGAR 192</a>
+    </div>
+
+    <div class="card emergencia">
+        <div class="card-info">
+            <b>UBS</b>
+        </div>
+        <a href="https://www.google.com/maps/search/[NOME+DA+UBS+MANAUS]" target="_blank" class="btn-acao">MAPA</a>
+    </div>
+
+    <div class="setor-title">🤝 Assistência e Solidariedade</div>
+
+    <div class="card">
+        <div class="card-info">
+            <b>CRAS</b>
+            <span>Apoio social e cestas básicas</span>
+        </div>
+        <a href="https://agendasemasc.manaus.am.gov.br/" target="_blank" class="btn-acao">INFO</a>
+    </div>
+
+    <div class="card">
+        <div class="card-info">
+            <b>Cozinha Comunitária</b><span>Alimentação e suporte local</span>
+        </div>
+    </div>
+
+    <div class="setor-title">💼 Emprego e Serviços Digitais</div>
+
+    <div class="card">
+        <div class="card-info">
+            <b>SINE Manaus</b>
+            <span>Vagas de emprego e currículos</span>
+        </div>
+        <a href="https://www.manaus.am.gov.br/semtepi/sine-manaus/" target="_blank" class="btn-acao">VAGAS</a>
+    </div>
+
+    <div class="card">
+        <div class="card-info">
+            <b>Portal Gov.br</b>
+            <span>Serviços do Governo Federal</span>
+        </div>
+        <a href="https://www.gov.br" target="_blank" class="btn-acao">ACESSAR</a>
+    </div>
+
+    <div class="card">
+        <div class="card-info">
+            <b>Âmbar Energia</b>
+            <span>2ª Via de Fatura</span>
+        </div>
+        <a href="https://agencia.ambarenergia-am.com.br/" target="_blank" class="btn-acao">BOLETO</a>
+    </div>
+
+</div>
+
+<footer>
+    <b>Atividade Extensionista UNINTER - Inclusão Digital</b><br>
+    Desenvolvido por Ana Beatriz Viga<br>
+    <span class="meta-info"> Manaus - Amazonas</span>
+</footer>
+
+</body>
+</html>
